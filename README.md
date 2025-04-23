@@ -36,8 +36,3 @@ This mini project serves as the foundation for:
 ## Dataset
 Filename: WineQT.csv
 
-📌 Notes
-The dataset is expected to be in the same directory as your script.
-
-For extended analysis, consider using the full dataset beyond the first 100 rows.
-
