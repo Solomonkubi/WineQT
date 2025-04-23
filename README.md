@@ -6,12 +6,12 @@ This project explores relationships between various physicochemical attributes o
 
 ## Getting Started
 To run this project, ensure you have the following Python packages installed:
-import pandas as pd
-import numpy as np
-import scipy as scp
-import seaborn as sns
-import matplotlib.pyplot as plt
-You can install any missing libraries using pip:
+- import pandas as pd
+- import numpy as np
+- import scipy as scp
+- import seaborn as sns
+- import matplotlib.pyplot as plt
+- You can install any missing libraries using pip:
 pip install pandas numpy scipy seaborn matplotlib
 
 ## Data Loading and Exploration
