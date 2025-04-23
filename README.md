@@ -1,39 +1,43 @@
-## Wine Quality analysis
-A mini project to analyze the quality of wine
-# Getting started
-To run this repo, the following  packages need to be imported;
-import pandas as pd 
+#  Wine Quality Analysis
+A mini data science project focused on analyzing the quality of wine using statistical methods and visualizations. The dataset contains physicochemical tests and quality scores of wine samples.
+
+## Project Overview
+This project explores relationships between various physicochemical attributes of wine (like acidity, sugar, and pH) and its quality. Through this analysis, we aim to draw insights and visualize trends that can help understand what makes a wine high or low quality.
+
+## Getting Started
+To run this project, ensure you have the following Python packages installed:
+import pandas as pd
 import numpy as np
 import scipy as scp
 import seaborn as sns
 import matplotlib.pyplot as plt
+You can install any missing libraries using pip:
+pip install pandas numpy scipy seaborn matplotlib
 
-# Read and load the file
-wine_datatset = pd.read_csv('WineQT.csv', header=0)
-# Load only the first 1000 rows
-wine_datatset.head(100)
+## Data Loading and Exploration
+Load the dataset:
+wine_dataset = pd.read_csv('WineQT.csv', header=0)
+Preview the first 100 records:
+wine_dataset.head(100)
 
-# gives basic statistics of dataframe
-wine_datatset.describe()
+Get summary statistics:
+wine_dataset.describe()
 
-wine_datatset[['fixed acidity', 'quality', 'volatile acidity']]
-# how can i get multiple columns
+Select key features for analysis:
+wine_dataset[['fixed acidity', 'quality', 'volatile acidity']]
 
-# checking the null values of the data
-null_count = wine_datatset.isnull().sum().sum()
-print(null_count)
 
-null_count = wine_datatset.isnull().sum()
-print('Number of null values:', null_count)
+## What's Next?
+This mini project serves as the foundation for:
+- Visualizing feature distributions
+- Correlation analysis between features and wine quality
+- Building predictive models for wine quality (future scope)
 
-# a plot of wine quality and the frequency levels
-sns.countplot(x='quality', data=wine_datatset, palette=['blue'] + ['red'] + ['yellow'])
-plt.xlabel('Wine quality')
-plt.ylabel('Frequency')
-plt.title('Wine quality classes')
-plt.show()
+## Dataset
+Filename: WineQT.csv
 
-# Relation between volatile acidity vs quality
-plot = plt.figure(figsize= (6,5))
-sns.barplot(x='quality' , y= 'volatile acidity' , data= wine_datatset)
-plt.title('volatile acidity and quality');
+📌 Notes
+The dataset is expected to be in the same directory as your script.
+
+For extended analysis, consider using the full dataset beyond the first 100 rows.
+
