@@ -1,4 +1,7 @@
-# Import the packages 
+## Wine Quality analysis
+A mini project to analyze the quality of wine
+# Getting started
+To run this repo, the following  packages need to be imported;
 import pandas as pd 
 import numpy as np
 import scipy as scp
